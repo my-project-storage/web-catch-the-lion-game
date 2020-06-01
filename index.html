@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>사자 잡기</title>
+        <!-- 부트스트랩 스타일 사용 -->
+    </head>
+    <body>
+        <body class="h-100 d-flex">
+            <!-- 게임 전체 영역 -->
+            <div class="app container h-100">
+                <!-- 게임 상황판, 누구의 턴인지 -->
+                <div class="alert alert-primary" role="alert">
+                    <strong id="infomation">#0</strong>
+                </div>
+                <!-- 위쪽 유저가 죽인 말을 놓는 공간 -->
+                <div id="upper_deadzone" class="card dead-zone mt-1 mb-3">
+                    <div class="card-body"></div>
+                </div>
+                <!-- 보드판이 있는 곳 -->
+                <div class="board-container container"></div>
+                <!-- 아래쪽 유저가 죽인 말을 놓는 공간  -->
+                <div id="lower_deadzone" class="card dead-zone mt-3">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <script src="src/index.ts"></script>
+        </body>
+    </body>
+</html>
